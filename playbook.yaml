@@ -1,5 +1,7 @@
 - name: add users
   hosts: all
+  vars_files: users
   tasks:
-  - usersdhahsvfhjasvb:
-     name: user1
+  - users:
+     name: "{{ item }}"
+    loop: "{{ users }}"
