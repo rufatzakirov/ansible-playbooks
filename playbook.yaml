@@ -1,0 +1,5 @@
+- name: add users
+  hosts: all
+  tasks:
+  - user:
+     name: user1
